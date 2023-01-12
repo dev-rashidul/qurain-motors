@@ -1,0 +1,246 @@
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .hero-wrapper {
+    padding: 150px 0 180px;
+  }
+
+  .rent-process-container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-wrapper {
+    padding: 150px 0 180px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+    line-height: 110%;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-img img {
+    max-width: 95%;
+  }
+
+  .rent-process-container {
+    max-width: 100%;
+  }
+
+  .rent-process-card h6 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-wrapper {
+    padding: 150px 0 180px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    line-height: 100%;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-btn a {
+    font-size: 18px;
+  }
+
+  .hero-img img {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+
+  .rent-process-container {
+    max-width: 100%;
+  }
+
+  .rent-process-card h6 {
+    font-size: 20px;
+  }
+
+  .rental-products-title h4,
+  .about-content h4,
+  .partner-title h4,
+  .clients-content h4,
+  .requested-car-title h4 {
+    font-size: 24px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+
+  .car-category-container {
+    flex-direction: column;
+  }
+
+  .car-category-left,
+  .car-category-right {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .car-category-left-wrapper h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .requested-car-slider {
+    padding-top: 100px;
+  }
+
+  .requested-car-wrapper .owl-nav {
+    position: absolute;
+    top: -53px;
+    right: 20px;
+  }
+
+  .footer-newsletter {
+    flex-direction: column;
+  }
+
+  .footer-newsletter-form {
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .hero-content h1 {
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-btn a {
+    font-size: 18px;
+  }
+
+  .hero-img img {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+
+  .rent-line::after {
+    width: 0;
+  }
+
+  .rent-process-container {
+    padding: 50px 30px;
+  }
+
+  .rental-products-title {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .rental-products-title h4,
+  .about-content h4,
+  .partner-title h4,
+  .clients-content h4,
+  .requested-car-title h4 {
+    font-size: 24px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+
+  .car-category-container {
+    flex-direction: column;
+  }
+
+  .car-cat-btn {
+    font-size: 14px;
+  }
+
+  .car-category-left,
+  .car-category-right {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .car-category-left-wrapper h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .car-category-left-wrapper p {
+    padding-right: 0;
+  }
+
+  .requested-car-slider {
+    padding-top: 100px;
+  }
+
+  .requested-car-wrapper .owl-nav {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+  }
+
+  .partners img {
+    width: 120px;
+  }
+
+  .footer-newsletter,
+  .footer-copyright {
+    flex-direction: column;
+  }
+
+  .footer-newsletter-form {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .footer-newsletter-text h5 {
+    font-size: 18px;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .hero-wrapper {
+    padding: 150px 0 400px;
+  }
+
+  .rent-process-container {
+    max-width: 100%;
+  }
+
+  .rent-process-card h6 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+  .hero-wrapper {
+    padding: 150px 0 300px;
+  }
+
+  .rent-process-container {
+    max-width: 100%;
+  }
+
+  .rent-process-card h6 {
+    font-size: 20px;
+  }
+}
