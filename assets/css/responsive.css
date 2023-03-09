@@ -148,6 +148,20 @@
     padding-bottom: 30px;
   }
 
+  span.rental-pdct-disc {
+    top: 15px;
+    left: 15px;
+  }
+
+  .rental-products-slide h6 {
+    font-size: 15px;
+  }
+
+  .rental-products-slide p {
+    font-size: 14px;
+    line-height: 8px;
+  }
+
   .rental-products-title h4,
   .about-content h4,
   .partner-title h4,
@@ -185,6 +199,20 @@
 
   .requested-car-slider {
     padding-top: 100px;
+  }
+
+  .requested-car-slide {
+    padding: 0;
+  }
+
+  .requested-car-slide {
+    font-size: 18px;
+  }
+
+  .requested-car-slide p,
+  .requested-car-content a {
+    font-size: 15px;
+    margin-bottom: 5px;
   }
 
   .requested-car-wrapper .owl-nav {

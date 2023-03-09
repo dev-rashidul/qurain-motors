@@ -16,7 +16,7 @@ $('.rental-products-slider').owlCarousel({
     autoplayTimeout: 2000,
     responsive:{
         0:{
-            items:1
+            items:2
         },
         600:{
             items:2
@@ -38,7 +38,8 @@ $('.requested-car-slider').owlCarousel({
     autoplayTimeout: 2000,
     responsive:{
         0:{
-            items:1
+            items:2,
+            margin: 0,
         },
         600:{
             items:2

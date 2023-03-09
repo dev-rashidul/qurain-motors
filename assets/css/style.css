@@ -392,6 +392,10 @@ span.rental-pdct-disc {
   margin-bottom: 15px;
 }
 
+.about-content p {
+  text-align: justify;
+}
+
 .about-content p a {
   font-size: 20px;
   font-weight: 500;
