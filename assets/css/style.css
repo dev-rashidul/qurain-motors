@@ -636,15 +636,15 @@ span.rental-pdct-disc {
 }
 
 .partners {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   align-items: center;
-  padding-top: 15px;
 }
 
 .partners img {
-  margin-bottom: 30px;
+  justify-self: center;
+  margin: 20px 0;
+  padding-right: 20px;
 }
 
 /* Partner Section CSS End */

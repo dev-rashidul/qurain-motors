@@ -221,8 +221,14 @@
     right: 20px;
   }
 
+  .partners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
   .partners img {
-    width: 120px;
+    width: 80%;
   }
 
   .footer-newsletter,
