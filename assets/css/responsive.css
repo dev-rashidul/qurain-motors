@@ -103,14 +103,16 @@
     right: 20px;
   }
 
-  .footer-newsletter {
-    flex-direction: column;
+  .about-content h3 {
+    font-size: 25px;
   }
 
-  .footer-newsletter-form {
-    width: 75%;
-    margin: auto;
-    margin-top: 30px;
+  .about-img img {
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+    height: 100%;
+    object-fit: initial;
   }
 }
 
@@ -231,23 +233,24 @@
     width: 80%;
   }
 
-  .footer-newsletter,
-  .footer-copyright {
-    flex-direction: column;
+  .about-content h3 {
+    font-size: 25px;
   }
 
-  .footer-newsletter-form {
-    width: 90%;
-    margin: auto;
-    margin-top: 30px;
+  .about-img img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    height: 100%;
+    object-fit: initial;
   }
 
-  .footer-newsletter-text h5 {
-    font-size: 18px;
+  .about-car-steps-wrapper {
+    padding: 20px 20px 0;
   }
 
-  .footer-copyright {
-    text-align: center;
+  .about-car-text h4 {
+    font-size: 20px;
   }
 }
 
