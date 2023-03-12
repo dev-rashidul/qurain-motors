@@ -49,6 +49,32 @@ p {
   color: #6d6d6d;
 }
 
+.fill-btn a {
+  display: block;
+  width: 192px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  padding: 13px 0;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}
+
+.outline-btn a {
+  display: block;
+  width: 192px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+  padding: 13px 0;
+  background: transparent;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}
+
 /* Base Styles CSS End */
 
 /* Header Part CSS Start */
@@ -62,6 +88,10 @@ nav.navbar {
   background: #eaeaea;
   padding: 20px 0;
   z-index: 999;
+}
+
+.light-header {
+  background: #ffffff !important;
 }
 
 .navbar.sticky {
