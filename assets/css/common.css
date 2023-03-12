@@ -226,6 +226,7 @@ ul.navbar-nav {
   font-size: 24px;
   font-weight: 700;
   color: var(--primary);
+  margin: 0;
 }
 
 .header-bredcrumb-menu ul li span {
