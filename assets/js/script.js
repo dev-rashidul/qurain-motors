@@ -50,3 +50,10 @@ $('.requested-car-slider').owlCarousel({
     },
     navText:['<img src="assets/images/left-arrow-icon.svg"/>','<img src="assets/images/right-arrow-icon.svg"/>']
 })
+
+
+
+
+
+
+

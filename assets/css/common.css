@@ -424,3 +424,81 @@ ul.navbar-nav {
     text-align: center;
   }
 }
+
+/* Form Related CSS : (I put these css here because we need these same css on many pages.) */
+
+.iti {
+  display: block;
+}
+
+.form-input-filed {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.form-input-field.form-field-50 {
+  width: 50%;
+}
+
+.form-input-field.form-field-50.form-group.md-group.show-label {
+  width: 100%;
+}
+
+.form-input-filed label {
+  font-size: 16px;
+  color: #000000;
+  padding-bottom: 8px;
+}
+
+.form-input-filed input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 0.5px solid #848484;
+  border-radius: 4px;
+}
+
+.form-input-filed input:focus {
+  outline: 0;
+}
+
+.iti--allow-dropdown input[type="tel"] {
+  width: 100%;
+  padding: 12px 18px 12px 50px !important;
+  border: 0.5px solid #848484;
+  border-radius: 4px;
+}
+
+.iti--allow-dropdown input[type="tel"]:focus {
+  outline: 0;
+}
+
+.form-input-filed textarea {
+  width: 100%;
+  height: 170px;
+  padding: 12px 15px;
+  resize: none;
+  border: 0.5px solid #848484;
+  border-radius: 4px;
+}
+
+.form-input-filed textarea:focus {
+  outline: 0;
+}
+
+.form-input-filed ::placeholder {
+  font-size: 15px;
+  color: rgba(24, 40, 81, 0.5);
+}
+
+.form-btn-field input {
+  display: block;
+  width: 130px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  padding: 13px 0;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}
