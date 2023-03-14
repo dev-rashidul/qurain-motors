@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Qurain Motors - Reset Password</title>
+    <title>Qurain Motors - My Rental</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
+    <!-- Country Phone Code with Flag CSS -->
+    <link
+      rel="stylesheet"
+      href="https://intl-tel-input.com/node_modules/intl-tel-input/build/css/intlTelInput.css?1549804213570"
+    />
+
     <!-- Common CSS -->
     <link rel="stylesheet" href="assets/css/common.css" />
 
-    <!-- Sign In Page CSS -->
-    <link rel="stylesheet" href="assets/css/sign-in.css" />
+    <!-- My Rental Page CSS -->
+    <link rel="stylesheet" href="assets/css/my-rental.css" />
   </head>
 
   <body>
@@ -95,7 +101,14 @@
 
       <section id="Header-bredcrumb">
         <div class="header-bredcrumb-wrapper">
-          <h4>Reset Password</h4>
+          <h4>My account</h4>
+          <div class="header-bredcrumb-menu">
+            <ul class="d-flex justify-content-center align-items-center">
+              <li><a href="#">Home</a></li>
+              <li><span> ></span></li>
+              <li><a href="#">My account</a></li>
+            </ul>
+          </div>
         </div>
       </section>
       <!-- Header Bredcrumb Section HTML End -->
@@ -106,77 +119,133 @@
     <!-- Main Part HTML Start -->
 
     <main>
-      <!-- Sign In Section HTML Start -->
+      <!-- My Rental Section HTML Start -->
 
-      <section id="Sign-in">
-        <div class="sign-in-wrapper">
+      <section id="Account">
+        <div class="account-wrapper">
           <div class="container">
-            <div class="row sign-in-container">
-              <div class="col-md-6">
-                <div class="sign-in-form-wrapper">
-                  <form>
-                    <div class="sign-in-form">
-                      <h4>Reset Password</h4>
-                      <p>Reset password</p>
-                      <div class="form-input-field">
-                        <label>Password</label>
-                        <div class="position-relative">
-                          <input
-                            id="password"
-                            type="password"
-                            placeholder="Password"
-                            required
-                          />
-                          <div class="eye">
-                            <img
-                              id="eye-off"
-                              src="assets/images/sing-in/eye-off.svg"
-                              alt="eye-off"
-                            />
-                            <img
-                              id="eye-on"
-                              src="assets/images/sing-in/eye-on.svg"
-                              alt="eye-on"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-input-field">
-                        <label>Confirm password</label>
-                        <div class="position-relative">
-                          <input
-                            id="password"
-                            type="password"
-                            placeholder="Password"
-                            required
-                          />
-                          <div class="eye">
-                            <img
-                              id="eye-off"
-                              src="assets/images/sing-in/eye-off.svg"
-                              alt="eye-off"
-                            />
-                            <img
-                              id="eye-on"
-                              src="assets/images/sing-in/eye-on.svg"
-                              alt="eye-on"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-btn-field">
-                        <input type="submit" value="Confirm" />
-                      </div>
-                    </div>
-                  </form>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="account-sidebar">
+                  <h4>My Account</h4>
+                  <div class="account-sidebar-menu">
+                    <ul>
+                      <li>
+                        <img
+                          src="assets/images/account/profile-icon.svg"
+                          alt="profile-icon"
+                        /><a href="my-account.html">My Details</a>
+                      </li>
+                      <li class="active">
+                        <img
+                          src="assets/images/account/car-icon-light.svg"
+                          alt="car-icon-light"
+                        /><a href="my-rental.html">My Rental</a>
+                      </li>
+                      <li>
+                        <img
+                          src="assets/images/account/setting-icon.svg"
+                          alt="setting-icon"
+                        /><a href="account-setting.html">Account Setting</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="sign-in-img float-end">
-                  <img
-                    src="assets/images/sing-in/sign-in-img.png"
-                    alt="sign-in-img"
-                  />
+              <div class="col-md-8">
+                <div class="my-rental">
+                  <div class="rental-wrapper">
+                    <h4>My Rental</h4>
+                    <div class="rental-item-wrapper">
+                      <div class="rental-tag">
+                        <span>Upcoming</span>
+                      </div>
+                      <div
+                        class="rental-item d-flex justify-content-between align-items-lg-start"
+                      >
+                        <div
+                          class="rental-item-content d-flex align-items-center"
+                        >
+                          <div class="rental-item-img">
+                            <img
+                              src="assets/images/my-rental/rental-img1.png"
+                              alt="rental-img1"
+                            />
+                          </div>
+                          <div class="rental-item-text">
+                            <span>car category</span>
+                            <h6>Car name or brand</h6>
+                            <div class="rental-item-color">
+                              <p>Color <span></span> lorem</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="rental-item-price d-flex justify-content-between align-items-center"
+                        >
+                          <h5>$850</h5>
+                          <a href="#">Cancel</a>
+                        </div>
+                      </div>
+                      <div
+                        class="rental-item d-flex justify-content-between align-items-lg-start"
+                      >
+                        <div
+                          class="rental-item-content d-flex align-items-center"
+                        >
+                          <div class="rental-item-img">
+                            <img
+                              src="assets/images/my-rental/rental-img2.png"
+                              alt="rental-img2"
+                            />
+                          </div>
+                          <div class="rental-item-text">
+                            <span>car category</span>
+                            <h6>Car name or brand</h6>
+                            <div class="rental-item-color">
+                              <p>Color <span></span> lorem</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="rental-item-price d-flex justify-content-between align-items-center"
+                        >
+                          <h5>$850</h5>
+                          <a href="#">Cancel</a>
+                        </div>
+                      </div>
+                      <div class="rental-tag">
+                        <span>Past</span>
+                      </div>
+                      <div
+                        class="rental-item d-flex justify-content-between align-items-lg-start"
+                      >
+                        <div
+                          class="rental-item-content d-flex align-items-center"
+                        >
+                          <div class="rental-item-img">
+                            <img
+                              src="assets/images/my-rental/rental-img3.png"
+                              alt="rental-img3"
+                            />
+                          </div>
+                          <div class="rental-item-text">
+                            <span>car category</span>
+                            <h6>Car name or brand</h6>
+                            <div class="rental-item-color">
+                              <p>Color <span></span> lorem</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="rental-item-price d-flex justify-content-between align-items-center"
+                        >
+                          <h5>$850</h5>
+                          <a href="#">Cancel</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -184,7 +253,7 @@
         </div>
       </section>
 
-      <!-- Sign In Section HTML End -->
+      <!-- My Rental Section HTML End -->
     </main>
 
     <!-- Main Part HTML End -->
@@ -434,26 +503,5 @@
 
     <!-- Custom JavaScript -->
     <script src="assets/js/script.js"></script>
-
-    <script>
-      // Eye On Off on Password
-
-      const eye = document.querySelector(".eye");
-      const password = document.getElementById("password");
-      const eyeOff = document.getElementById("eye-off");
-      const eyeOn = document.getElementById("eye-on");
-
-      eye.addEventListener("click", function () {
-        if (password.type === "password") {
-          password.type = "text";
-          eyeOff.style.display = "block";
-          eyeOn.style.display = "none";
-        } else {
-          password.type = "password";
-          eyeOff.style.display = "none";
-          eyeOn.style.display = "block";
-        }
-      });
-    </script>
   </body>
 </html>

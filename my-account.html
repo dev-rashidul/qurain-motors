@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Qurain Motors - Reset Password</title>
+    <title>Qurain Motors - My Account</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
+    <!-- Country Phone Code with Flag CSS -->
+    <link
+      rel="stylesheet"
+      href="https://intl-tel-input.com/node_modules/intl-tel-input/build/css/intlTelInput.css?1549804213570"
+    />
+
     <!-- Common CSS -->
     <link rel="stylesheet" href="assets/css/common.css" />
 
-    <!-- Sign In Page CSS -->
-    <link rel="stylesheet" href="assets/css/sign-in.css" />
+    <!-- My Account Page CSS -->
+    <link rel="stylesheet" href="assets/css/account.css" />
   </head>
 
   <body>
@@ -95,7 +101,14 @@
 
       <section id="Header-bredcrumb">
         <div class="header-bredcrumb-wrapper">
-          <h4>Reset Password</h4>
+          <h4>My account</h4>
+          <div class="header-bredcrumb-menu">
+            <ul class="d-flex justify-content-center align-items-center">
+              <li><a href="#">Home</a></li>
+              <li><span> ></span></li>
+              <li><a href="#">My account</a></li>
+            </ul>
+          </div>
         </div>
       </section>
       <!-- Header Bredcrumb Section HTML End -->
@@ -106,77 +119,138 @@
     <!-- Main Part HTML Start -->
 
     <main>
-      <!-- Sign In Section HTML Start -->
+      <!-- My account Section HTML Start -->
 
-      <section id="Sign-in">
-        <div class="sign-in-wrapper">
+      <section id="Account">
+        <div class="account-wrapper">
           <div class="container">
-            <div class="row sign-in-container">
-              <div class="col-md-6">
-                <div class="sign-in-form-wrapper">
-                  <form>
-                    <div class="sign-in-form">
-                      <h4>Reset Password</h4>
-                      <p>Reset password</p>
-                      <div class="form-input-field">
-                        <label>Password</label>
-                        <div class="position-relative">
-                          <input
-                            id="password"
-                            type="password"
-                            placeholder="Password"
-                            required
-                          />
-                          <div class="eye">
-                            <img
-                              id="eye-off"
-                              src="assets/images/sing-in/eye-off.svg"
-                              alt="eye-off"
-                            />
-                            <img
-                              id="eye-on"
-                              src="assets/images/sing-in/eye-on.svg"
-                              alt="eye-on"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-input-field">
-                        <label>Confirm password</label>
-                        <div class="position-relative">
-                          <input
-                            id="password"
-                            type="password"
-                            placeholder="Password"
-                            required
-                          />
-                          <div class="eye">
-                            <img
-                              id="eye-off"
-                              src="assets/images/sing-in/eye-off.svg"
-                              alt="eye-off"
-                            />
-                            <img
-                              id="eye-on"
-                              src="assets/images/sing-in/eye-on.svg"
-                              alt="eye-on"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-btn-field">
-                        <input type="submit" value="Confirm" />
-                      </div>
-                    </div>
-                  </form>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="account-sidebar">
+                  <h4>My Account</h4>
+                  <div class="account-sidebar-menu">
+                    <ul>
+                      <li class="active">
+                        <img
+                          src="assets/images/account/profile-icon-light.svg"
+                          alt="profile-icon-light"
+                        /><a href="my-account.html">My Details</a>
+                      </li>
+                      <li>
+                        <img
+                          src="assets/images/account/car-icon.svg"
+                          alt="car-icon"
+                        /><a href="my-rental.html">My Rental</a>
+                      </li>
+                      <li>
+                        <img
+                          src="assets/images/account/setting-icon.svg"
+                          alt="setting-icon"
+                        /><a href="account-setting.html">Account Setting</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="sign-in-img float-end">
-                  <img
-                    src="assets/images/sing-in/sign-in-img.png"
-                    alt="sign-in-img"
-                  />
+              <div class="col-md-8">
+                <div class="account-details">
+                  <h4>My Detailes</h4>
+                  <div class="account-form-title">
+                    <h6>Personal Information</h6>
+                    <hr />
+                  </div>
+                  <div class="d-flex pt-4">
+                    <div class="account-form-text">
+                      <p>
+                        Personal information is any information that can
+                        identify a person, from someone's name and address to
+                        their device identifier and account number
+                      </p>
+                    </div>
+                    <div class="account-form-wrapper">
+                      <form>
+                        <div class="account-form">
+                          <div class="d-flex justify-content-between">
+                            <div class="form-input-field form-field-50 pe-2">
+                              <label>First-name</label>
+                              <input
+                                type="text"
+                                placeholder="Ibrahim"
+                                required
+                              />
+                            </div>
+                            <div class="form-input-field form-field-50 ps-2">
+                              <label>Last-name</label>
+                              <input type="text" placeholder="Mhmd" required />
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <div class="form-input-field form-field-50 pe-2">
+                              <label>Date of birth</label>
+                              <input type="date" required />
+                            </div>
+                            <div
+                              class="form-input-field form-field-50 form-group md-group show-label ps-2"
+                            >
+                              <label class="pb-2">Phone</label>
+                              <br />
+                              <input
+                                type="tel"
+                                id="phone"
+                                placeholder="+20123 456 78"
+                                value="+1 "
+                                required
+                              />
+                            </div>
+                          </div>
+                          <div class="form-input-field">
+                            <label>Address</label>
+                            <select>
+                              <option value="Address">Address</option>
+                              <option value="Address2">Address2</option>
+                            </select>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="account-form-title pt-4">
+                    <h6>E-mail address</h6>
+                    <hr />
+                  </div>
+                  <div class="d-flex pt-4">
+                    <div class="account-form-text">
+                      <p>
+                        Personal information is any information that can
+                        identify a person, from someone's name and address to
+                        their device identifier and account number
+                      </p>
+                    </div>
+                    <div class="account-form-wrapper">
+                      <form>
+                        <div class="account-form">
+                          <div class="form-input-field">
+                            <label>Email</label>
+                            <input
+                              type="email"
+                              placeholder="mail@mail.com"
+                              required
+                            />
+                          </div>
+                          <div
+                            class="account-form-buttons d-flex justify-content-end pt-5 pb-4"
+                          >
+                            <div class="outline-btn pe-3">
+                              <a href="#">Edit</a>
+                            </div>
+                            <div class="fill-btn">
+                              <a href="">Save</a>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -184,7 +258,7 @@
         </div>
       </section>
 
-      <!-- Sign In Section HTML End -->
+      <!-- My account Section HTML End -->
     </main>
 
     <!-- Main Part HTML End -->
@@ -432,27 +506,46 @@
     <!-- Bootstrap JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
 
+    <!-- Country Phone Code with Flag JavaScript -->
+    <script src="https://intl-tel-input.com/node_modules/intl-tel-input/build/js/intlTelInput.js?1549804213570"></script>
+
     <!-- Custom JavaScript -->
     <script src="assets/js/script.js"></script>
 
+    <!-- Country Phone Code with Flag JavaScript Code -->
+
     <script>
-      // Eye On Off on Password
+      var countryData = window.intlTelInputGlobals.getCountryData(),
+        input = document.querySelector("#phone"),
+        addressDropdown = document.querySelector("#address-country");
 
-      const eye = document.querySelector(".eye");
-      const password = document.getElementById("password");
-      const eyeOff = document.getElementById("eye-off");
-      const eyeOn = document.getElementById("eye-on");
+      // init plugin
+      var iti = window.intlTelInput(input, {
+        hiddenInput: "full_phone",
+        utilsScript:
+          "https://intl-tel-input.com/node_modules/intl-tel-input/build/js/utils.js?1549804213570",
+      });
 
-      eye.addEventListener("click", function () {
-        if (password.type === "password") {
-          password.type = "text";
-          eyeOff.style.display = "block";
-          eyeOn.style.display = "none";
-        } else {
-          password.type = "password";
-          eyeOff.style.display = "none";
-          eyeOn.style.display = "block";
-        }
+      // populate the country dropdown
+      for (var i = 0; i < countryData.length; i++) {
+        var country = countryData[i];
+        var optionNode = document.createElement("option");
+        optionNode.value = country.iso2;
+        var textNode = document.createTextNode(country.name);
+        optionNode.appendChild(textNode);
+        addressDropdown.appendChild(optionNode);
+      }
+      // set it's initial value
+      addressDropdown.value = iti.getSelectedCountryData().iso2;
+
+      // listen to the telephone input for changes
+      input.addEventListener("countrychange", function (e) {
+        addressDropdown.value = iti.getSelectedCountryData().iso2;
+      });
+
+      // listen to the address dropdown for changes
+      addressDropdown.addEventListener("change", function () {
+        iti.setCountry(this.value);
       });
     </script>
   </body>
