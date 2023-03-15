@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qurain Motors - Checkout3</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="assets/css/common.css" />
+
+    <!-- Checkout Page CSS -->
+    <link rel="stylesheet" href="assets/css/checkout.css" />
+  </head>
+
+  <body>
+    <!-- Header Part HTML Start -->
+
+    <header>
+      <!-- Navigation Section HTML Start -->
+
+      <section id="Header">
+        <nav class="navbar navbar-expand-xl light-header">
+          <div class="container">
+            <a class="logo" href="index.html"
+              ><img src="assets/images/header/logo.svg" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav pl-md-5 mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cars.html">Cars</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Offers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+              <div class="navbar-nav ml-auto mt-2 mt-xl-0">
+                <div class="nav-buttons d-flex align-items-center">
+                  <a href="#">
+                    <img
+                      draggable="false"
+                      src="assets/images/header/search.svg"
+                      alt="search"
+                    />
+                  </a>
+                  <a class="ps-4" href="#">
+                    <img
+                      draggable="false"
+                      src="assets/images/header/user.svg"
+                      alt="user"
+                    />
+                  </a>
+                  <a class="ps-2" href="#">
+                    <img
+                      draggable="false"
+                      src="assets/images/header/heart.svg"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- Navigation Section HTML End -->
+
+      <!-- Checkout Hero Section HTML Start -->
+
+      <section id="Checkout-hero">
+        <div class="checkout-hero-wrapper">
+          <div class="container">
+            <div
+              class="checkout-steps d-flex justify-content-center align-items-center"
+            >
+              <div class="checkout-step d-flex align-items-center">
+                <img src="assets/images/checkout/check.svg" alt="check" />
+                <span>Personal Information</span>
+              </div>
+              <div class="checkout-step d-flex align-items-center">
+                <img src="assets/images/checkout/check.svg" alt="check" />
+                <span>Rent details</span>
+              </div>
+              <div class="checkout-step d-flex align-items-center">
+                <img src="assets/images/checkout/check.svg" alt="check" />
+                <span>Payment</span>
+              </div>
+              <div class="checkout-step d-flex align-items-center">
+                <p>4</p>
+                <span>Confirmation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Checkout Hero Section HTML End -->
+    </header>
+
+    <!-- Header Part HTML End -->
+
+    <!-- Main Part HTML Start -->
+
+    <main>
+      <!-- Checkout Section HTML Start -->
+
+      <section id="Checkout">
+        <div class="checkout-wrapper">
+          <div class="container">
+            <div class="checkout-form-wrapper">
+              <div class="payment-method">
+                <div class="payment-method-buttons">
+                  <ul
+                    class="nav nav-pills justify-content-center align-items-center mb-3"
+                    id="pills-tab"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="pills-master-card-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-master-card"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-master-card"
+                        aria-selected="true"
+                      >
+                        <span></span>
+                        <img
+                          draggable="false"
+                          src="assets/images/checkout/master-card-icon.svg"
+                          alt="master-card-icon"
+                        />
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-visa-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-visa"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-visa"
+                        aria-selected="false"
+                      >
+                        <span></span>
+                        <img
+                          draggable="false"
+                          src="assets/images/checkout/visa-card-icon.svg"
+                          alt="visa-card-icon"
+                        />
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-cod-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-cod"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-cod"
+                        aria-selected="false"
+                      >
+                        <span></span>
+                        Cash On site
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <form>
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-master-card"
+                    role="tabpanel"
+                    aria-labelledby="pills-master-card-tab"
+                    tabindex="0"
+                  >
+                    <div class="checkout-form">
+                      <div class="form-input-field">
+                        <label>Name on card</label>
+                        <input
+                          type="text"
+                          placeholder="Enter your name"
+                          required
+                        />
+                      </div>
+                      <div class="d-flex">
+                        <div class="form-input-field form-field-65 pe-2">
+                          <label>Card Number</label>
+                          <input
+                            type="text"
+                            placeholder="0000-0000-0000-0000"
+                            required
+                          />
+                        </div>
+                        <div class="form-input-field form-field-35 ps-2">
+                          <label>Cvv</label>
+                          <input
+                            type="text"
+                            placeholder="Enter your CVV"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="form-input-field form-field-50 pe-2">
+                          <label>Exp-month</label>
+                          <select>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                          </select>
+                        </div>
+                        <div class="form-input-field form-field-50 ps-2">
+                          <label>Exp-Year</label>
+                          <select>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div
+                        class="form-btn-field d-flex justify-content-between"
+                      >
+                        <div class="outline-btn">
+                          <a href="#">
+                            <img
+                              src="assets/images/checkout/arrow-left-icon.svg"
+                              alt="arrow-left-icon"
+                            />
+                            Back
+                          </a>
+                        </div>
+                        <div class="fill-btn">
+                          <a href="#">
+                            Next Step
+                            <img
+                              src="assets/images/checkout/arrow-right-icon.svg"
+                              alt="arrow-right-icon"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-visa"
+                    role="tabpanel"
+                    aria-labelledby="pills-visa-tab"
+                    tabindex="0"
+                  >
+                    <h2>Visa Card Content Goes Here</h2>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-cod"
+                    role="tabpanel"
+                    aria-labelledby="pills-cod-tab"
+                    tabindex="0"
+                  >
+                    <h2>Cash On Site Content Goes Here</h2>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Checkout Section HTML End -->
+    </main>
+
+    <!-- Main Part HTML End -->
+
+    <!-- Footer Part HTML Start -->
+
+    <footer id="Footer">
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="row mb-2">
+            <div class="col-lg-5">
+              <div class="footer-about">
+                <div class="footer-logo">
+                  <a href="#">
+                    <img src="assets/images/footer/logo.svg" alt="logo" />
+                  </a>
+                </div>
+                <p>
+                  The late 50’s were seminal in that a number of multi-national
+                  companies began to explore the Kuwait market
+                </p>
+                <div class="footer-contact-details">
+                  <li>
+                    <a href="#">
+                      <img
+                        draggable="false"
+                        src="assets/images/footer/phone.svg"
+                        alt="phone"
+                      />
+                      (+965) 1 805 008
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        draggable="false"
+                        src="assets/images/footer/email.svg"
+                        alt="email"
+                      />
+                      exampel@exa.com
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        draggable="false"
+                        src="assets/images/footer/loacation-small.png"
+                        alt="loacation-small"
+                      />
+                      POBox 164 Safat, 13002 Safat, Kuwait.
+                    </a>
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 mt-4 mt-lg-0">
+              <div class="row">
+                <div class="col-sm-6 col-md-4 mt-4 mt-sm-0">
+                  <div class="footer-nav">
+                    <h4>INFORMATIONS</h4>
+                    <div class="footer-menu">
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">Best offers today</a>
+                      </li>
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">Cars featuers</a>
+                      </li>
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">Rental Information</a>
+                      </li>
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">Help Topic</a>
+                      </li>
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">Give Us Feedback</a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mt-4 mt-sm-0">
+                  <div class="footer-nav">
+                    <h4>POLICIES</h4>
+                    <div class="footer-menu">
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">Rental</a>
+                      </li>
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">Product Warranty</a>
+                      </li>
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">Best offers</a>
+                      </li>
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">FAQ</a>
+                      </li>
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">COVID-19 Update</a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mt-4 mt-md-0">
+                  <div class="footer-nav">
+                    <h4>PRODUCT LINKS</h4>
+                    <div class="footer-menu">
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">BMW cars</a>
+                      </li>
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">Ford Cars</a>
+                      </li>
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">666 Cars</a>
+                      </li>
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">Sports cars</a>
+                      </li>
+                      <li>
+                        <img
+                          draggable="false"
+                          src="assets/images/footer/check-icon.svg"
+                          alt="check-icon"
+                        />
+                        <a href="#">Passengers cars</a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <div class="footer-newsletter">
+            <div class="footer-newsletter-text d-flex align-items-center">
+              <img
+                draggable="false"
+                src="assets/images/footer/newsletter.svg"
+                alt="newsletter"
+              />
+              <h5>
+                <span>$90 OFF*</span> YOUR ORDER! SUBSCRIBE TO <br />
+                OUR NEWSLETTER TODAY.
+              </h5>
+            </div>
+            <div class="footer-newsletter-form">
+              <form class="d-flex align-items-center position-relative">
+                <input type="text" placeholder="Your email address" />
+                <button type="submit">SUBSCRIBE</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <div class="footer-copyright">
+            <div class="copyright-text">
+              <p>Copyright © 2023Al-Qurain Inc. All rights reserved.</p>
+            </div>
+            <div class="payment-img mt-4 mt-md-0">
+              <img
+                draggable="false"
+                src="assets/images/footer/icons-payment.svg"
+                alt="icons-payment"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer Part HTML End -->
+
+    <!-- Bootstrap JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

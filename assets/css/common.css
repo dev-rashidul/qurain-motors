@@ -437,8 +437,16 @@ ul.navbar-nav {
   padding-bottom: 15px;
 }
 
+.form-input-field.form-field-35 {
+  width: 35%;
+}
+
 .form-input-field.form-field-50 {
   width: 50%;
+}
+
+.form-input-field.form-field-65 {
+  width: 65%;
 }
 
 .form-input-field label {
