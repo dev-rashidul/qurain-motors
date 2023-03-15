@@ -265,6 +265,7 @@ ul.navbar-nav {
 
 .footer-contact-details li a {
   font-size: 16px;
+  font-weight: 500;
   text-align: right;
   color: #231f1f;
 }

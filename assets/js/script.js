@@ -52,3 +52,4 @@ $(".requested-car-slider").owlCarousel({
     '<img src="assets/images/right-arrow-icon.svg"/>',
   ],
 });
+
